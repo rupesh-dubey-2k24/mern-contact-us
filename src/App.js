@@ -19,7 +19,7 @@ function App() {
     e.preventDefault();
     try {
       // Send form data to the server
-      const response = await axios.post('http://localhost:5000/api/contact', formData);
+      const response = await axios.post('https://nunu-alpha.vercel.app/api/contact', formData);
       console.log(response.data);
       // Reset form after successful submission
       setFormData({ fullName: '', email: '', message: '' });
